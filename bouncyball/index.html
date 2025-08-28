@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sandbox Games</title>
+  <style>
+    :root{
+      --bg:#0b1220;
+      --fg:#e6eef9;
+      --accent:#7db6ff;
+      --glass1:rgba(21,35,66,0.55);
+      --glass2:rgba(21,35,66,0.35);
+      --glass-border:rgba(125,182,255,0.22);
+    }
+    body{
+      margin:0; height:100vh;
+      display:flex; align-items:center; justify-content:center;
+      background:var(--bg); color:var(--fg);
+      font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,sans-serif;
+    }
+    .menu{
+      background:linear-gradient(180deg,var(--glass1),var(--glass2));
+      border:1px solid var(--glass-border);
+      border-radius:16px;
+      backdrop-filter: blur(12px) saturate(130%);
+      -webkit-backdrop-filter: blur(12px) saturate(130%);
+      box-shadow:0 12px 36px rgba(0,0,0,.45), inset 0 1px 0 rgba(255,255,255,.05);
+      padding:30px 40px;
+      text-align:center;
+      max-width:400px;
+      width:90%;
+    }
+    h1{ margin:0 0 20px; font-size:1.8rem; color:var(--accent); }
+    p{ margin:0 0 30px; color:#a8b5d1; font-size:14px; }
+    .game-link{
+      display:block;
+      margin:12px auto;
+      padding:14px 20px;
+      border-radius:12px;
+      text-decoration:none;
+      font-weight:600;
+      background:linear-gradient(180deg, rgba(125,182,255,0.22), rgba(125,182,255,0.08));
+      border:1px solid var(--glass-border);
+      color:var(--fg);
+      box-shadow:0 6px 18px rgba(10,17,34,.35);
+      transition: transform .15s ease, filter .15s ease;
+    }
+    .game-link:hover{
+      filter:brightness(1.1);
+      transform:translateY(-2px);
+    }
+	.back-link {
+	  display:inline-block;
+	  margin-top:10px;
+	  padding:12px 18px;
+	  border-radius:12px;
+	  font-weight:600;
+	  text-decoration:none;
+	  color:#e6eef9;
+	  background: linear-gradient(180deg, rgba(21,35,66,0.55), rgba(21,35,66,0.35));
+	  border: 1px solid rgba(125,182,255,0.22);
+	  backdrop-filter: blur(12px) saturate(130%);
+	  -webkit-backdrop-filter: blur(12px) saturate(130%);
+	  box-shadow: 0 8px 22px rgba(10,17,34,.35), inset 0 1px 0 rgba(255,255,255,.05);
+	  transition: transform 0.15s ease, filter 0.15s ease;
+	}
+	.back-link:hover {
+	  filter: brightness(1.08);
+	  transform: translateY(-1px);
+	}
+		
+  </style>
+</head>
+<body>
+  <div class="menu">
+  <h1>Sandbox Games</h1>
+  <p>Choose a game to play. More coming soon!</p>
+
+  <a href="bouncyball/" class="game-link">🎮 Bouncy Ball</a>
+
+  <br><br>
+
+  <a href="https://card.hfsocial.com" class="back-link">💳 Back to Card</a>
+</div>
+
+</body>
+</html>
